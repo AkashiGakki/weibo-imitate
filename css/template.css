@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+header {
+	width: 100vw;
+	height: 50px;
+}
+.logo {
+	text-align: center;
+}
+.logo i {
+	color: #FF6D4A;
+	line-height: 50px;
+}
+.logo a {
+	text-decoration: none;
+}
+.title {
+	font-size: 20px;
+	font-family: "Lucida Handwriting", "MV Boli", "Segoe Print", "Giddyup Std", "Consolas";
+	color: #000000;
+}
+.nav-bar {
+	float: left;
+	line-height: 50px;
+	text-align: center;
+}
+.input-group[class*=col-] {
+	float: left;
+}
+.form-control {
+	margin-top: 8px;
+}
+.fa {
+	height: 14px;
+}
+.nav-title {
+	margin-top: 8px;
+}
+.dropdown-menu {
+	width: 100px;
+}
+.icon-container {
+	width: 100vw;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-items: center;
+	justify-content: center;
+}
+.icon-container > a {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-items: center;
+	justify-content: center;
+}
+@media screen and (max-width: 992px) {
+    .nav-hidden {
+        display: none;
+    }
+}
+footer {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+}
