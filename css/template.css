@@ -60,7 +60,8 @@ header {
     }
 }
 footer {
-    position: absolute;
+    position: relative;
+	top: 30px;
     bottom: 0;
     text-align: center;
 }
