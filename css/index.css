@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+}
+.row {
+    width: 100%;
+}
+.container {
+    display: flex;
+    justify-items: center;
+}
+.left-banner {
+    width: 50%;
+    height: auto;
+    margin: 10px;
+}
+.right-banner {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+}
+.right-banner img {
+    width: 262px;
+    margin: 10px;
+}
+.card {
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #FAFBFC;
+}
+.panel-default>.panel-heading {
+    background-color: #FAFBFC;
+}
