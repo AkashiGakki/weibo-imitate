@@ -1,0 +1,27 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.row {
+	width: 100%;
+}
+
+.head-info {
+	border: 1px solid red;
+	margin: auto;
+	width: 60%;
+	height: 250px;
+	text-align: center;
+}
+.body-info {
+	border: 1px solid blue;
+	margin: auto;
+	margin-top: 40px;
+	width: 60%;
+	height: 700px;
+}
+.head-info .img-circle {
+	width: 70px;
+	height: 70px;
+	margin-top: 20px;
+}
