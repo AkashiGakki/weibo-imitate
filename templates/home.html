@@ -10,6 +10,11 @@
 	<link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.css">
 	<link rel="stylesheet" href="../css/template.css">
 	<link rel="stylesheet" href="../css/home.css">
+	<!-- <style type="text/css">
+		.right-navbar{
+			cursor: pointer; 
+		}
+	</style> -->
 </head>
 <body>
 <header class="row">
@@ -86,12 +91,60 @@
 	</div>
 </header>
 <section>
-	<div class="row" style="border: 1px solid black; height: 1000px; width: 100%; margin: 0px;">
+	<div class="row" style="border: 1px solid black; height: 1050px; width: 100%; margin: 0px;">
 		<div class="head-info">
 			<img src="..\img\user\user.jpg" class="img-circle">
-			<p class="nickname">Username<i class=""></i></p>
+			<p class="nickname">Username<i class="fa fa-mars" style="margin-left: 8px;"></i></p>
+			<p class="self-intro">一句话介绍自己吧，让别人更了解你</p>
+			<div class="row head-nav">
+				<span><a href="#">我的主页</a></span>
+				<span><a href="#">我的相册</a></span>
+				<span><a href="#">管理中心</a></span>
+			</div>
 		</div>
-		<div class="body-info"></div>
+		<div class="row body-info">
+			<div class="body-left col-md-4">
+				<div class="left-up">
+					<table class="tb-counter">
+						<tbody>
+							<tr>
+								<td><a href="#"><strong class="tb-number">0</strong><span>关注</span></a></td>
+								<td><a href="#"><strong class="tb-number">0</strong><span>粉丝</span></a></td>
+								<td><a href="#"><strong class="tb-number">0</strong><span>微博</span></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="left-mid">
+					<div class="user-grade"><p>用户等级：lv2</p></div>
+					<div class="user-data"><p>个人资料完整度<strong>0%</strong></p></div>
+					<div class="edit-user-data"><a href="#"><span>编辑个人资料</span>&gt;</a></div>
+				</div>
+				<div class="left-down">
+					<div class="imgs-head"><p><strong>相册</strong></p></div>
+					<div class="imgs-thumbs"><p>这里是图片的缩略图</p></div>
+					<div class="imgs-more"><a href="#"><span>查看更多</span>&gt;</a></div>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="body-right col-md-7">
+				<div class="right-header">
+					<div class="right-navbar">
+						<ul>
+							<li><a href="#">全部</a></li>
+							<li><a href="#">更多</a></li>
+						</ul>
+					</div>
+					<div class="right-search">
+						<input placeholder="搜索我的微博">
+					</div>
+				</div>
+				<div class="right-content">
+					<p>你还没有发过微博！</p>
+					<p><a href="#">点击发一条微博</a></p>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 <footer>
@@ -123,7 +176,13 @@
         </div>
     </div>
 </footer>
-<script src="../lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
-<script src="../lib/bootstrap-3.3.7/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/bootstrap-3.3.7/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- <script type="text/javascript">
+		$(".right-navbar").click(function(){
+			alert("666");
+			window.location="https://www.cnblogs.com/hutuzhu/p/4450850.html";
+		})
+	</script> -->
 </body>
 </html>
