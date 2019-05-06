@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Find</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../img/weibo-icon.png">
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="../css/template.css">
+	<style type="text/css">
+	section{
+		background-image: url(http://bpic.588ku.com/back_pic/03/71/88/2857b855cd13f58.jpg);		
+		background-size: 100% 100%;
+	}
+	.row {
+		width: 100%;
+	}
+	.main-container{
+		padding-left: 0;
+		background: rgba(138, 169, 241, 0.5);
+		display: flex;
+		justify-content: space-between;
+		padding-top: 20px;
+	}
+	.left{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.main-container .left .nav-list{
+		width: 100%;
+		list-style: none;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.main-container .left .nav-list li{
+		height: 40px;
+		line-height: 40px;
+		text-align:center;
+	}
+	.main-container .left .nav-list li:hover{
+		background: rgba(217, 229, 241, 0.5);
+	}
+	.main-container .center{
+		padding-left: 0;
+	}
+	.main-container .right{
+		background: white;
+		height: 200px;
+	}
+	.right .category{
+		display: flex;
+		justify-content: space-around;
+	}
+	.panel-info-img{
+		height: 70px;
+		width: 70px;
+		border-radius: 50%;
+		border: 1px solid red;
+	}
+</style>
+</head>
+<body>
+	<header class="row">
+		<div class="col-md-2 col-xs-2 logo nav-bar">
+			<a href="#">
+				<i class="fa fa-weibo fa-3x"></i>
+				<span class="title">weibo</span>
+			</a>
+		</div>
+		<div class="col-md-4 col-xs-5 nav-title">
+			<ul class="nav nav-pills">
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">发现</a>
+				</li>
+				<li>
+					<a href="#">话题</a>
+				</li>
+				<li>
+					<a href="#">设置</a>
+				</li>
+				<li>
+					<a href="#">个人中心</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-3 col-xs-3 input-group nav-bar">
+			<input type="text" class="form-control" placeholder="Search for...">
+			<span class="input-group-btn">
+				<button class="btn btn-default" type="button">Go!</button>
+			</span>
+		</div>
+		<div class="col-md-2 col-xs-1 nav-bar nav-hidden">
+			<a href="#" class="btn btn-default" role="button">
+				<i class="fa fa-plus"></i>
+			</a>
+			<a href="#" class="btn btn-default" role="button">
+				<i class="fa fa-bell-o"></i>
+			</a>
+		</div>
+		<div class="col-md-1 col-xs-1 dropdown nav-bar nav-hidden">
+			<a href="" role="button" class="dropdown-toggle" type="button" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<img src="../img/user/user.jpg" alt="user" class="img-circle" style="height: 36px">
+				<ul class="dropdown-menu drop-user" aria-labelledby="dropdownMenuUser">
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-home user-icon" aria-hidden="true"></span>
+							<span>我的主页</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-cog user-icon" aria-hidden="true"></span>
+							<span>账号设置</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-heart user-icon" aria-hidden="true"></span>
+							<span>我的收藏</span>
+						</a>
+					</li>
+					<li role="separator" class="divider"></li>
+					<li>
+						<a href="../index.html">
+							<span class="glyphicon glyphicon-off user-icon" aria-hidden="true"></span>
+							<span>安全退出</span>
+						</a>
+					</li>
+				</ul>
+			</a>
+		</div>
+	</header>
+	<section>
+		<!-- 在这里编辑你的内容 -->
+		<div class="row icon-container">
+			<div class="col-md-9 main-container">
+				<div class="col-md-2 left">
+					<ul class="nav-list">
+						<li><a href="#">热蒙</a></li>
+						<li><a href="#">社会</a></li>
+						<li><a href="#">电影</a></li>
+						<li><a href="#">动漫</a></li>
+						<li><a href="#">音乐</a></li>
+						<li><a href="#">游戏</a></li>
+						<li><a href="#">电竞</a></li>
+						<li><a href="#">冲浪</a></li>
+						<li><a href="#">攀岩</a></li>
+					</ul>
+				</div>
+			
+				<!-- 用户模块 -->
+				<div class="col-md-8 center">
+					<!-- 单个用户模块 -->
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">用户名</h3>
+						</div>
+						<div class="panel-body">
+							<div class="media">
+								<div class="media-left">
+									<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557115914162&di=f47d79943ce37dd69a2b9b9168fcc674&imgtype=0&src=http%3A%2F%2Fwx2.sinaimg.cn%2Flarge%2F0078CUxfly1fwco0iu8mgj30e80e8myb.jpg" class="img-circle panel-info-img">
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">左对齐</h4>
+									<p>这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">用户名</h3>
+						</div>
+						<div class="panel-body">
+							<div class="media">
+								<div class="media-left">
+									<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557115914162&di=f47d79943ce37dd69a2b9b9168fcc674&imgtype=0&src=http%3A%2F%2Fwx2.sinaimg.cn%2Flarge%2F0078CUxfly1fwco0iu8mgj30e80e8myb.jpg" class="img-circle panel-info-img">
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">左对齐</h4>
+									<p>这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...这是一些示例文本...</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">面板标题</h3>
+						</div>
+						<div class="panel-body">
+							<div class="media">
+								<div class="media-left">
+									<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557115914162&di=f47d79943ce37dd69a2b9b9168fcc674&imgtype=0&src=http%3A%2F%2Fwx2.sinaimg.cn%2Flarge%2F0078CUxfly1fwco0iu8mgj30e80e8myb.jpg" class="img-circle panel-info-img">
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">左对齐</h4>
+									<p>这是一些示例文本...</p>
+									<p>这是一些示例文本...</p>
+									<p>这是一些示例文本...</p>
+									<p>这是一些示例文本...</p>
+									<p>这是一些示例文本...</p>
+									<p>这是一些示例文本...</p>
+									<p>这是一些示例文本...</p>
+									<p>这是一些示例文本...</p>
+									<p>这是一些示例文本...</p>
+									<p>这是一些示例文本...</p>
+									<p>这是一些示例文本...</p>
+									<p>这是一些示例文本...</p>
+									<p>这是一些示例文本...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 right">
+					<h4>热门话题分类</h4>
+					<div class="category">
+						<button type="button" class="btn btn-link">动漫</button>
+						<button type="button" class="btn btn-link">体育</button>
+					</div>
+					<div class="category">
+						<button type="button" class="btn btn-link">攀岩</button>
+						<button type="button" class="btn btn-link">冲浪</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="row icon-container">
+			<div class="col-md-1">
+				<a href="#" class="img-circle">
+					<i class="fa fa-weixin fa-2x" style="color: #2ecc71"></i>
+				</a>
+			</div>
+			<div class="col-md-1">
+				<a href="#" class="img-circle">
+					<i class="fa fa-qq fa-2x" style="color: #3498db"></i>
+				</a>
+			</div>
+			<div class="col-md-1">
+				<a href="#" class="img-circle">
+					<i class="fa  fa-github fa-2x" style="color: #34495e"></i>
+				</a>
+			</div>
+			<div class="col-md-1">
+				<a href="#" class="img-circle">
+					<i class="fa fa-envelope fa-2x" style="color: #FF6D4A"></i>
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="sign">
+				<span><small>Copyright &copy; 2019 By Akashi_Sai</small></span>
+			</div>
+		</div>
+	</footer>
+	<script src="../lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/bootstrap-3.3.7/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
