@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Template</title>
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7/dist/css/bootstrap.min.css"/>
+    <!--    <link rel="stylesheet" href="../lib/fontawesome-free-5.8.1-web/css/fontawesome.min.css">-->
+    <!--    <link rel="stylesheet" href="../lib/fontawesome-free-5.8.1-web/css/all.css">-->
+    <link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/template.css">
+</head>
+<body>
+<header class="row">
+    <div class="col-md-2 col-xs-2 logo nav-bar">
+        <a href="#">
+            <i class="fa fa-weibo fa-3x"></i>
+            <span class="title">weibo</span>
+        </a>
+    </div>
+    <div class="col-md-4 col-xs-5 nav-title">
+        <ul class="nav nav-pills">
+            <li>
+                <a href="#">首页</a>
+            </li>
+            <li>
+                <a href="#">发现</a>
+            </li>
+            <li>
+                <a href="#">话题</a>
+            </li>
+            <li>
+                <a href="#">设置</a>
+            </li>
+            <li>
+                <a href="#">个人中心</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-3 col-xs-3 input-group nav-bar">
+        <input type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+        	<button class="btn btn-default" type="button">Go!</button>
+      	</span>
+    </div>
+    <div class="col-md-2 col-xs-1 nav-bar nav-hidden">
+        <a href="#" class="btn btn-default" role="button">
+            <i class="fa fa-plus"></i>
+        </a>
+        <!--<a href="#" class="btn btn-default" role="button">-->
+        <!--<i class="fa fa-search"></i>-->
+        <!--</a>-->
+        <a href="#" class="btn btn-default" role="button">
+            <i class="fa fa-bell-o"></i>
+        </a>
+    </div>
+    <div class="col-md-1 col-xs-1 dropdown nav-bar nav-hidden">
+        <a href="" role="button" class="dropdown-toggle" type="button" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <img src="../img/user/user.jpg" alt="user" class="img-circle" style="height: 36px">
+            <ul class="dropdown-menu drop-user" aria-labelledby="dropdownMenuUser">
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-home user-icon" aria-hidden="true"></span>
+                        <span>我的主页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-cog user-icon" aria-hidden="true"></span>
+                        <span>账号设置</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-heart user-icon" aria-hidden="true"></span>
+                        <span>我的收藏</span>
+                    </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                    <a href="../index.html">
+                        <span class="glyphicon glyphicon-off user-icon" aria-hidden="true"></span>
+                        <span>安全退出</span>
+                    </a>
+                </li>
+            </ul>
+        </a>
+    </div>
+</header>
+<section>
+    <form style="margin-left:500px;margin-top:20px;">
+        <div class="form-group">
+            <label for="user" stype="display:inline;"><img src="../img/user/user.jpg" alt="user" class="img-circle" style="height: 36px"></label>
+            <button type="submit" class="btn btn-primary" onclick="">更换头像</button>
+        </div>
+        <div class="form-group">
+            <label for="user" stype="display:inline;">昵称：</label>
+            <input type="text" class="form-control" id="user" style="display:inline;width:200px;"autocomplete="off" />
+        </div>
+        <div class="form-group">
+            <label for="password" style="display:inline;">密码：</label>
+            <input type="text" class="form-control" id="password" style="display:inline;width:200px;"autocomplete="off" />
+        </div>
+        <div class="form-group">
+            <label for="password" style="display:inline;">邮箱：</label>
+            <input type="text" class="form-control" id="e-mail" style="display:inline;width:200px;"autocomplete="off" />
+        </div>
+        <div class="form-group">
+            <label for="password" style="display:inline;">手机：</label>
+            <input type="text" class="form-control" id="telephone" style="display:inline;width:200px;"autocomplete="off" />
+        </div>
+        <div class="form-group">
+            <label for="password" style="display:inline;">绑定第三方账号：</label>
+            <label>
+                <div for="user" stype="display:inline;">
+                    <div class="col-md-6 col-xs-1">
+                        <a href="#" class="img-circle">
+                            <i class="fa fa-weixin fa-2x" style="color: #2ecc71">      </i>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-xs-1">
+                        <a href="#" class="img-circle">
+                            <i class="fa fa-qq fa-2x" style="color: #3498db"></i>
+                        </a>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="">保存</button>
+    </form>
+</section>
+<footer>
+    <div class="row icon-container">
+        <div class="col-md-1">
+            <a href="#" class="img-circle">
+                <i class="fa fa-weixin fa-2x" style="color: #2ecc71"></i>
+            </a>
+        </div>
+        <div class="col-md-1">
+            <a href="#" class="img-circle">
+                <i class="fa fa-qq fa-2x" style="color: #3498db"></i>
+            </a>
+        </div>
+        <div class="col-md-1">
+            <a href="#" class="img-circle">
+                <i class="fa  fa-github fa-2x" style="color: #34495e"></i>
+            </a>
+        </div>
+        <div class="col-md-1">
+            <a href="#" class="img-circle">
+                <i class="fa fa-envelope fa-2x" style="color: #FF6D4A"></i>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="sign">
+            <span><small>Copyright &copy; 2019 By Akashi_Sai</small></span>
+        </div>
+    </div>
+</footer>
+<script src="../lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="../lib/bootstrap-3.3.7/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
