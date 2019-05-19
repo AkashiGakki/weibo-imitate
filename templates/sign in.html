@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sign in</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/weibo-icon.png">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/sign in.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+        .row{
+            width: 100%;
+        }
+        section{
+            background-image: url(http://bpic.588ku.com/back_pic/03/71/88/2857b855cd13f58.jpg);
+            background-size: 100% 100%;
+            width: 100%;
+        }
+        .form-control{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<header class="row">
+    <div class="col-md-2 col-xs-2 logo nav-bar">
+        <a href="#">
+            <i class="fa fa-weibo fa-3x"></i>
+            <span class="title">weibo</span>
+        </a>
+    </div>
+    <div class="col-md-4 col-xs-5 nav-title">
+        <ul class="nav nav-pills">
+            <li>
+                <a href="#">首页</a>
+            </li>
+            <li>
+                <a href="#">发现</a>
+            </li>
+            <li>
+                <a href="#">话题</a>
+            </li>
+            <li>
+                <a href="#">设置</a>
+            </li>
+            <li>
+                <a href="#">个人中心</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-3 col-xs-3 input-group nav-bar">
+        <input type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+        	<button class="btn btn-default" type="button">Go!</button>
+      	</span>
+    </div>
+    <div class="col-md-2 col-xs-1 nav-bar nav-hidden">
+        <a href="#" class="btn btn-default" role="button">
+            <i class="fa fa-plus"></i>
+        </a>
+        <a href="#" class="btn btn-default" role="button">
+            <i class="fa fa-bell-o"></i>
+        </a>
+    </div>
+    <div class="col-md-1 col-xs-1 dropdown nav-bar nav-hidden">
+        <a href="" role="button" class="dropdown-toggle" type="button" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <img src="../img/user/user.jpg" alt="user" class="img-circle" style="height: 36px">
+            <ul class="dropdown-menu drop-user" aria-labelledby="dropdownMenuUser">
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-home user-icon" aria-hidden="true"></span>
+                        <span>我的主页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-cog user-icon" aria-hidden="true"></span>
+                        <span>账号设置</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-heart user-icon" aria-hidden="true"></span>
+                        <span>我的收藏</span>
+                    </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                    <a href="../index.html">
+                        <span class="glyphicon glyphicon-off user-icon" aria-hidden="true"></span>
+                        <span>安全退出</span>
+                    </a>
+                </li>
+            </ul>
+        </a>
+    </div>
+</header>
+<section>
+    <!-- 在这里编辑你的内容 -->
+    <div class="wrap" id="wrap">
+
+        <div class="logGet">
+
+            <!-- 头部提示信息 -->
+
+            <div class="logD logDtip">
+                <p class="p1">登录</p>
+
+            </div>
+            <form id="form1" >
+                <!-- 输入框 -->
+                <div class=" input-group input-group-md">
+              <span class="input-group-addon" id="sizing-addon1"><i
+                      class="glyphicon glyphicon-user" aria-hidden="true"></i></span> <input
+                        id="userName" type="text" class="form-control" placeholder="用户名"
+                        aria-describedby="sizing-addon1" />
+                </div>
+                <br />
+                <div class=" input-group input-group-md">
+                    <span class="input-group-addon" id="sizing-addon1">
+                        <i class="glyphicon glyphicon-lock"></i></span>
+               <input type="password" id="password" class="form-control" placeholder="密码" aria-describedby="sizing-addon1" />
+                </div>
+                <div class=" input-group input-group-md"><a href="">忘记密码</a></div>
+                <div class="logC">
+
+                    <a href="index.html" target="_self"><button>登 录</button></a>
+
+                </div>
+
+                <div class="logE">
+                    <h6>第三方账号登录：</h6>
+                    <a href=""><img src="http://ku.90sjimg.com/element_origin_pic/01/06/01/31764c2adce006d2f9db5580639e32fd.png!/fw/253/quality/100/unsharp/true/compress/true/canvas/253x262/cvscolor/FFFFFFFF" width="20" height="20" alt=""/>
+                    </a>
+                    <a href=""><img src="http://pic.962.net/up/2017-1/2017110923134788.png" width="20" height="20" alt=""/>
+                    </a>
+                    <br><a href="register.html">立即注册</a>
+
+                </div>
+
+        </div>
+
+    </div>
+    </form>
+
+</section>
+<footer>
+    <div class="row icon-container">
+        <div class="col-md-1">
+            <a href="#" class="img-circle">
+                <i class="fa fa-weixin fa-2x" style="color: #2ecc71"></i>
+            </a>
+        </div>
+        <div class="col-md-1">
+            <a href="#" class="img-circle">
+                <i class="fa fa-qq fa-2x" style="color: #3498db"></i>
+            </a>
+        </div>
+        <div class="col-md-1">
+            <a href="#" class="img-circle">
+                <i class="fa  fa-github fa-2x" style="color: #34495e"></i>
+            </a>
+        </div>
+        <div class="col-md-1">
+            <a href="#" class="img-circle">
+                <i class="fa fa-envelope fa-2x" style="color: #FF6D4A"></i>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="sign">
+            <span><small>Copyright &copy; 2019 By Akashi_Sai</small></span>
+        </div>
+    </div>
+</footer>
+<script src="../lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="../lib/bootstrap-3.3.7/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
