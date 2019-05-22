@@ -50,6 +50,7 @@ header {
 	flex-flow: row nowrap;
 	justify-items: center;
 	justify-content: center;
+	margin-top: 10px;
 }
 .icon-container > a {
 	display: flex;
@@ -67,6 +68,10 @@ footer {
 	/*top: 30px;*/
     bottom: 0;
     text-align: center;
+    width: 100%;
+    border-top: 1px solid #DDDDDD;
+    height: 80px;
+    background-color: #FFFFFF;
 }
 .sign {
 	width: 100%;

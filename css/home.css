@@ -80,97 +80,7 @@ section {
 	padding-left: 0px;
 	padding-right: 0px;
 }
-.left-up {
-	height: 60px;
-	/*border: 1px solid blue;*/
-}
-.tb-counter {
-	text-align: center;
-	width: 100%;
-	height: 100%;
-}
-.tb-counter tbody tr td {
-	border-left: 1px solid #b8b8b8;
-	border-right: 1px solid #b8b8b8;
-}
-.tb-counter tbody tr td a {
-	text-decoration: none;
-}
-.tb-number {
-	display: block;
-}
 
-.left-mid {
-	height: 180px;
-	margin-top: 30px;
-	/*border: 1px solid red;*/
-}
-.user-grade {
-	width: 100%;
-	height: 40%;
-	line-height: 72px;
-	border-bottom: 1px solid #b8b8b8;
-}
-.user-data {
-	width: 100%;
-	height: 40%;
-	line-height: 72px;
-	border-bottom: 1px solid #b8b8b8;
-}
-.edit-user-data {
-	width: 100%;
-	height: 20%;
-	text-align: center;
-	line-height: 36px;
-}
-.edit-user-data a {
-	text-decoration: none;
-	display: block;
-	height: 100%;
-	width: 100%;
-}
-.user-grade p, .user-data p, .user-data strong {
-	margin-left: 10px;
-}
-
-
-.left-down {
-	height: 360px;
-	margin-top: 30px;
-	/*border: 1px solid #FF5A00;*/
-}
-.imgs-head {
-	width: 100%;
-	height: 10%;
-	line-height: 36px;
-	font-size: 16px;
-	font-weight: 700px;
-	border-bottom: 1px solid #b8b8b8;
-}
-.imgs-head p {
-	margin-left: 10px;
-}
-.imgs-thumbs {
-	width: 100%;
-	height: 80%;
-	line-height: 288px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-bottom: 1px solid #b8b8b8;
-}
-.imgs-more {
-	width: 100%;
-	height: 10%;
-	line-height: 36px;
-	text-align: center;
-}
-.imgs-more a {
-	text-decoration: none;
-	display: block;
-	height: 100%;
-	width: 100%;
-}
 
 
 .right-header {
@@ -205,4 +115,38 @@ section {
 	margin-top: 20px;
 	height: 600px;
 	text-align: center;
+	background-color: rgb(217, 229, 241);
+}
+
+.article-list ul li {
+	border: 1px solid black;
+	list-style: none;
+	margin: auto;
+	margin-top: 30px;
+	width: 80%;
+	height: 200px;
+	border-radius: 10px;
+	box-shadow: 0px 5px 7px #CCCCCC;
+	background-color: white;
+}
+.article-list-up {
+	/*border: 1px solid green;*/
+	height: 80%;
+}
+.article-list-bottom {
+	/*border: 1px solid orange;*/
+	width: 100%;
+	height: 18%;
+	background-color: #EEEEEE;
+	border-radius: 10px;
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-around;
+}
+.article-list-bottom button {
+	height: 100%;
+	width: 20%;
+	background-color: #EEEEEE;
+	border-radius: 10px;
+	border: 1px;
 }
