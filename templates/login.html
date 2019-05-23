@@ -4,17 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Home</title>
+	<title>Template</title>
 	<link rel="shortcut icon" type="image/x-icon" href="../img/weibo-icon.png">
 	<link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7/dist/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.css">
 	<link rel="stylesheet" href="../css/template.css">
-	<link rel="stylesheet" href="../css/home.css">
-	<!-- <style type="text/css">
-		.right-navbar{
-			cursor: pointer; 
-		}
-	</style> -->
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
 <body>
 <header class="row">
@@ -91,60 +86,29 @@
 	</div>
 </header>
 <section>
-	<div class="row" style="border: 1px solid black; height: 1050px; width: 100%; margin: 0px;">
-		<div class="head-info">
-			<img src="..\img\user\user.jpg" class="img-circle">
-			<p class="nickname">Username<i class="fa fa-mars" style="margin-left: 8px;"></i></p>
-			<p class="self-intro">一句话介绍自己吧，让别人更了解你</p>
-			<div class="row head-nav">
-				<span><a href="#">我的主页</a></span>
-				<span><a href="#">我的相册</a></span>
-				<span><a href="#">管理中心</a></span>
-			</div>
-		</div>
-		<div class="row body-info">
-			
-			<div class="body-right col-md-12">
-				<div class="right-header">
-					<div class="right-navbar">
-						<ul>
-							<li><a href="#">全部</a></li>
-							<li><a href="#">更多</a></li>
-						</ul>
-					</div>
-					<div class="right-search">
-						<input placeholder="搜索我的微博">
-					</div>
-				</div>
-				<div class="right-content">
-					<div class="article-list">
-						<ul>
-							<li>
-								<div class="article-list-up">
-									<h4>Article1</h4>
-									<p>This is article one.</p>	
-								</div>
-								<div class="article-list-bottom">
-									<button>编辑</button>
-									<button>删除</button>
-								</div>
-							</li>
-							<li>
-								<div class="article-list-up">
-									<h4>Article2</h4>
-									<p>This is article two.</p>	
-								</div>
-								<div class="article-list-bottom">
-									<button>编辑</button>
-									<button>删除</button>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+
+	<div class="loginwarrp">
+		<div class="logo">用户登陆</div>
+        <div class="login_form">
+			<form id="Login" name="Login" method="post" onsubmit="" action="">
+				<li class="login-item">
+					<span>用户名：</span>
+					<input type="text" id="username" name="UserName" class="login_input" >
+                                        <span id="count-msg" class="error"></span>
+				</li>
+				<li class="login-item">
+					<span>密　码：</span>
+					<input type="password" id="password" name="password" class="login_input" >
+                                        <span id="password-msg" class="error"></span>
+				</li>
+				<li class="login-sub">
+					<button>登录</button>
+					<button>注册</button>
+				</li>                      
+           </form>
 		</div>
 	</div>
+	
 </section>
 <footer>
 	<div class="row icon-container">
@@ -175,13 +139,7 @@
         </div>
     </div>
 </footer>
-	<script src="../lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../lib/bootstrap-3.3.7/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-	<!-- <script type="text/javascript">
-		$(".right-navbar").click(function(){
-			alert("666");
-			window.location="https://www.cnblogs.com/hutuzhu/p/4450850.html";
-		})
-	</script> -->
+<script src="../lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="../lib/bootstrap-3.3.7/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
