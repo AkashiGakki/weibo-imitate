@@ -63,7 +63,7 @@ header {
     }
 }
 footer {
-    position: fixed;
+    /*position: fixed;*/
 	/*top: 30px;*/
     bottom: 0;
     text-align: center;
